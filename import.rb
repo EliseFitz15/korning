@@ -1,6 +1,5 @@
 require 'pg'
 require 'csv'
-require 'pry'
 
 def db_connection
   begin
