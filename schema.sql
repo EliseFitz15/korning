@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS sales, employee, frequency, product, customer;
 
 CREATE TABLE employee(
   id SERIAL PRIMARY KEY,
- email VARCHAR(255), 
+ email VARCHAR(255),
  name VARCHAR(255)
 );
 
@@ -12,7 +12,7 @@ CREATE TABLE frequency(
  invoice_frequency VARCHAR(255)
 );
 
-CREATE TABLE product (
+CREATE TABLE product(
   id SERIAL PRIMARY KEY,
  name VARCHAR(1000)
 );
