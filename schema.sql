@@ -1,12 +1,6 @@
 -- DEFINE YOUR DATABASE SCHEMA HERE
 DROP TABLE IF EXISTS sales, employee, frequency, product, customer;
 
-CREATE TABLE employee(
-  id SERIAL PRIMARY KEY,
- email VARCHAR(255),
- name VARCHAR(255)
-);
-
 CREATE TABLE frequency(
   id SERIAL PRIMARY KEY,
  invoice_frequency VARCHAR(255)
@@ -21,6 +15,13 @@ CREATE TABLE customer(
   id SERIAL PRIMARY KEY,
  act_no VARCHAR(255),
  company_name VARCHAR(1000)
+);
+
+CREATE TABLE employee(
+  id SERIAL PRIMARY KEY,
+  first_name VARCHAR(255),
+  last_name VARCHAR(255),
+  email VARCHAR(255)
 );
 
 CREATE TABLE sales(
